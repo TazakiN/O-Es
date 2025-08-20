@@ -1,12 +1,12 @@
-[[bin]]
+[package]
 name = "blog_os"
 version = "0.1.0"
-edition = "2018"
+edition = "2024"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "blog_os"
+test = false
+bench = false
 
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
+[dependencies]
+bootloader = "0.9"
